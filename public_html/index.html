@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
     <link rel="stylesheet" href="css/style.css">
+<<<<<<< HEAD
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src
+    <link rel="stylesheet" href="css/slider.css">
+    >>>>>>> Body gewijzegd="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+=======
     <title>1ITF Sass BS4 project</title>
 </head>
 <body>
@@ -76,7 +80,7 @@
 </nav>
 
 <!-- Modal -->
-<div class="modal fade" id="imageModal">
+<div class="modal fade header " id="imageModal">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -91,48 +95,88 @@
         </div>
     </div>
 </div>
-<div class="jumbotron text-center">
+<div class="header text-center">
     <h1>My First Bootstrap Page</h1>
     <p>Resize this responsive page to see the effect!</p>
 </div>
 
-<div class="container">
-    <div class="row">
-        <div class="col-lg-2 col-md-4 col-sm-6">
-        <h3>Column 1</h3>
-        <p>Lorem ipsum dolor..</p>
-        <p>Ut enim ad..</p>
+
+<!-- Slider-->
+
+<div class="flex-container">
+    <div class="flex-slide s1">
+        <div class="flex-title flex-title-home">S1</div>
+        <div class="flex-about flex-about-home">
+            <p>Click here to navigate to the home section of the website</p>
+        </div>
     </div>
-        <div class="col-lg-2 col-md-4 col-sm-6">
-            <h3>Column 2</h3>
-            <p>Lorem ipsum dolor..</p>
-            <p>Ut enim ad..</p>
+    <div class="flex-slide tamerHosny">
+        <div class="flex-title">Tamer Hosny</div>
+        <div class="flex-about">
+            <p>Click here to navigate to the About section of the website</p>
         </div>
-        <div class="col-lg-2 col-md-4 col-sm-6">
-            <h3>Column 3</h3>
-            <p>Lorem ipsum dolor..</p>
-            <p>Ut enim ad..</p>
+    </div>
+    <div class="flex-slide s3">
+        <div class="flex-title">S3</div>
+        <div class="flex-about">
+            <p>Click here to navigate to the home section of the website</p>
         </div>
-        <div class="col-lg-2 col-md-4 col-sm-6">
-            <h3>Column 1</h3>
-            <p>Lorem ipsum dolor..</p>
-            <p>Ut enim ad..</p>
+    </div>
+    <div class="flex-slide s4">
+        <div class="flex-title flex-title-home">S4</div>
+        <div class="flex-about flex-about-home">
+            <p>Click here to navigate to the home section of the website</p>
         </div>
-        <div class="col-lg-2 col-md-4 col-sm-6">
-            <h3>Column 2</h3>
-            <p>Lorem ipsum dolor..</p>
-            <p>Ut enim ad..</p>
+    </div>
+    <div class="flex-slide nassifZeytoun">
+        <div class="flex-title">Nassif Zeytoun</div>
+        <div class="flex-about">
+            <p>Click here to navigate to the About section of the website</p>
         </div>
-        <div class="col-lg-2 col-md-4 col-sm-6">
-            <h3>Column 3</h3>
-            <p>Lorem ipsum dolor..</p>
-            <p>Ut enim ad..</p>
+    </div>
+    <div class="flex-slide s6">
+        <div class="flex-title flex-title-home">S6</div>
+        <div class="flex-about flex-about-home">
+            <p>Click here to navigate to the home section of the website</p>
         </div>
     </div>
 </div>
 
+
+
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
+
 <!--custom scripts-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.waitforimages/2.2.0/jquery.waitforimages.min.js"></script>
+<script>
+    (function(){
+        $('.flex-container').waitForImages(function() {
+            $('.spinner').fadeOut();
+        }, $.noop, true);
+
+        $(".flex-slide").each(function(){
+            $(this).hover(function(){
+                $(this).find('.flex-title').css({
+                    transform: 'rotate(0deg)',
+                    top: '10%'
+                });
+                $(this).find('.flex-about').css({
+                    opacity: '1'
+                });
+            }, function(){
+                $(this).find('.flex-title').css({
+                    transform: 'rotate(90deg)',
+                    top: '15%'
+                });
+                $(this).find('.flex-about').css({
+                    opacity: '0'
+                });
+            })
+        });
+    })();
+</script>
+
+
 </body>
 </html>
