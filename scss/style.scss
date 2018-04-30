@@ -8,6 +8,7 @@ $theme-colors: (
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 // Custom code/partials
+@import "slider";
 
 .header{
   max-width: 100%;
