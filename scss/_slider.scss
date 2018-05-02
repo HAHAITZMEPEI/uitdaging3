@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Raleway', sans-serif;
+  font: $font;
 }
 
 .flex-container {
@@ -111,14 +111,14 @@ body {
   background-position: center center;
   background-attachment: fixed;
 }
-.s3 {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.pexels.com/photos/207171/pexels-photo-207171.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+.taylorSwift {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://media.virginradio.fr/article-3608844-head-f8/taylor-swift-photoshoot.jpg);
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
 }
-.s4 {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.pexels.com/photos/533540/pexels-photo-533540.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+.arianaGrande {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://www.hdwallpapers.in/walls/ariana_grande_4k_2018-wide.jpg);
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;

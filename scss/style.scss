@@ -10,6 +10,12 @@ $theme-colors: (
 // Custom code/partials
 @import "slider";
 
+// Google Fonts
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+// Variables
+$font:font-family: 'Montserrat', sans-serif;
+
 .header{
   max-width: 100%;
   height: 100vh;
