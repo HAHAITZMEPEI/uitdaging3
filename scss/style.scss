@@ -10,6 +10,8 @@ $theme-colors: (
 // Custom code/partials
 @import "slider";
 @import "container";
+@import "ArianaGrande";
+@import "TaylorSwift";
 
 // Google Fonts
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
@@ -20,7 +22,7 @@ $theme-colors: (
 .header{
   max-width: 100%;
   height: 100vh;
-  background-image: url(https://images.pexels.com/photos/302655/pexels-photo-302655.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+  background-image: url(../images/Header.jpg);
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -28,13 +30,43 @@ $theme-colors: (
   background-size: cover;
   padding-top: 20%;
   color: white;
-
 }
+
 .navbar{
-  background-color: rgba(244, 92, 36,0.8);
+  background-color: rgba(55, 6, 23,0.6);
+  a{
+    color: white;
+  }
+  .dropdown-menu {
+    background-color: rgba(55, 6, 23,1);
+  }
 }
 
 .footer {
   height: 100vh;
+}
 
+footer {
+  background-color: #6f42c1;
+  img {
+    float: left;
+    background-color: #6f42c1;
+  }
+}
+
+p {
+  animation-duration: 2s;
+  animation-name: tekst;
+  animation-iteration-count: inherit;
+}
+@keyframes tekst {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
