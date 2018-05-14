@@ -23,8 +23,8 @@
 <body>
 
     <!--Nav bar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 600 600">
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 600 600">
             <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
                 <x:xmpmeta xmlns:x="adobe:ns:meta/"x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39">
                     <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
@@ -55,7 +55,7 @@
             <rect id="Rounded_Rectangle_4-4" data-name="Rounded Rectangle 4" class="cls-4" x="322" y="275" width="57" height="9" rx="4.5" ry="4.5"/>
             <rect id="Rounded_Rectangle_4-5" data-name="Rounded Rectangle 4" class="cls-4" x="322" y="294" width="57" height="9" rx="4.5" ry="4.5"/>
             <rect id="Rounded_Rectangle_4-6" data-name="Rounded Rectangle 4" class="cls-4" x="220" y="256" width="57" height="9" rx="4.5" ry="4.5"/>
-        </svg>
+        </svg></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -73,9 +73,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#evenementen">Evenementen</a>
                 </li>
-                <li class="nav-item dropdown active">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Artists
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Artiesten
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item active" href="Tamer_Hosny.html">Tamer Hosny</a>
@@ -83,7 +83,7 @@
                         <a class="dropdown-item" href="Michael_Jackson.html">Michael Jackson</a>
                         <a class="dropdown-item" href="Taylor_Swift.html">Taylor Swift</a>
                         <a class="dropdown-item" href="Ariana_Grande.html">Ariana Grande</a>
-                        <a class="dropdown-item" href="Nassif_Zeytoun.html">Ariana Grande</a>
+                        <a class="dropdown-item" href="Nassif_Zeytoun.html">Nassif Zeytoun</a>
                     </div>
                 </li>
             </ul>
@@ -110,17 +110,17 @@
             <div class="row">
                 <article class="container content">
                     <h3>Awards</h3>
-                    <div class="mainInfo">
+                    <div class="mainAwardsInfo">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
                         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
                     </div>
-                    <div class="event">
+                    <div class="extraAwardsInfo">
                         <h2 class="text-center">Heading</h2>
                         <p class="text-center">Paragraph.</p>
                         <p class="text-center">Another paragraph.</p>
-                        <p class="text-right"><a class="btn btn-dark btn-lg lessInfo">Less</a></p>
+                        <p class="text-right"><a class="btn btn-outline-dark btn-lg lessAwardsInfo">Less</a></p>
                     </div>
-                    <p class="text-right"><a class="btn btn-dark btn-lg moreInfo">More</a></p>
+                    <p class="text-right"><a class="btn btn-outline-dark btn-lg moreAwardsInfo">More</a></p>
                 </article>
             </div>
         </div>
@@ -132,17 +132,17 @@
             <div class="row">
                 <article class="container content">
                     <h3>Evenementen</h3>
-                    <div class="mainInfo">
+                    <div class="mainEvenementenInfo">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
                         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
                     </div>
-                    <div class="event">
+                    <div class="extraEvenementenInfo">
                         <h2 class="text-center">Heading</h2>
                         <p class="text-center">Paragraph.</p>
                         <p class="text-center">Another paragraph.</p>
-                        <p class="text-right"><a class="btn btn-dark btn-lg lessInfo">Less</a></p>
+                        <p class="text-right"><a class="btn btn-outline-dark btn-lg lessEvenementenInfo">Less</a></p>
                     </div>
-                    <p class="text-right"><a class="btn btn-dark btn-lg moreInfo">More</a></p>
+                    <p class="text-right"><a class="btn btn-outline-dark btn-lg moreEvenementenInfo">More</a></p>
                 </article>
             </div>
         </div>
@@ -159,7 +159,7 @@
     <script src="js/bootstrap.bundle.min.js"></script>
 
     <!--Other scripts-->
-        <!--Active nav door Omar-->
+        <!--Active nav -->
 
         <script >
             $('#navbarSupportedContent > ul li a').click(function() {
@@ -170,19 +170,30 @@
             });
         </script>
 
-        <!--Events buttons door Omar-->
+        <!--Events buttons -->
         <script >
             $(document).ready(function(){
-                $(".event").hide();
-                $("a.moreInfo").click(function(){
-                    $(".event").slideDown();
-                    $(".moreInfo").hide();
-                    $(".mainInfo").hide();
+                $(".extraAwardsInfo").hide();
+                $("a.moreAwardsInfo").click(function(){
+                    $(".extraAwardsInfo").show();
+                    $(".moreAwardsInfo").hide();
+                    $(".mainAwardsInfo").hide();
                 });
-                $("a.lessInfo").click(function(){
-                    $(".event").slideUp();
-                    $(".moreInfo").show();
-                    $(".mainInfo").show();
+                $("a.lessAwardsInfo").click(function(){
+                    $(".extraAwardsInfo").hide();
+                    $(".moreAwardsInfo").show();
+                    $(".mainAwardsInfo").show();
+                });
+                $(".extraEvenementenInfo").hide();
+                $("a.moreEvenementenInfo").click(function(){
+                    $(".extraEvenementenInfo").show();
+                    $(".moreEvenementenInfo").hide();
+                    $(".mainEvenementenInfo").hide();
+                });
+                $("a.lessEvenementenInfo").click(function(){
+                    $(".extraEvenementenInfo").hide();
+                    $(".moreEvenementenInfo").show();
+                    $(".mainEvenementenInfo").show();
                 });
             });
         </script>

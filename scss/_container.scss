@@ -1,29 +1,72 @@
 body{
   overflow-x: hidden;
 
-  section {
-    #ArianaGrande-container {
-      height: 150vh;
-      background-image: url("../public_html/images/AG-Header.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-      @media only screen and (max-width: 500px) {
-        background-position: right;
-      }
+  #ArianaGrande-container {
+    height: 150vh;
+    background-image: url("../images/AG-Header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    @media only screen and (max-width: 500px) {
+      background-position: right;
     }
-    #TamerHosny-container {
-      height: 150vh;
-      background-image: url("https://cache.foochia.com/wp-content/uploads/2018/02/Untitled-1-118.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-      @media only screen and (max-width: 500px) {
-        background-position: right;
-      }
+  }
+  #Eminem-container {
+    height: 150vh;
+    background-image: url("../images/Eminem.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    @media only screen and (max-width: 500px) {
+      background-position: right;
     }
+  }
+  #michaelJakson-container {
+    height: 150vh;
+    background-image: url("../images/Michael_jackson.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    @media only screen and (max-width: 500px) {
+      background-position: right;
+    }
+  }
+  #NassifZeytoun-container {
+    height: 150vh;
+    background-image: url("../images/NassifZeytoun.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    @media only screen and (max-width: 500px) {
+      background-position: right;
+    }
+  }
+  #TamerHosny-container {
+    height: 150vh;
+    background-image: url("../images/TH-Header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    @media only screen and (max-width: 500px) {
+      background-position: right;
+    }
+  }
+  #TaylorSwift-container {
+    height: 150vh;
+    background-image: url("../images/TS-Header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    @media only screen and (max-width: 500px) {
+      background-position: right;
+    }
+  }
     .section-one {
       height: 150vh;
       background-image: url("https://images.pexels.com/photos/9137/night-vintage-music-bokeh.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
@@ -45,6 +88,7 @@ body{
       background-size: cover;
       background-attachment: fixed;
     }
+  section {
     #overDeArtist {
       position: absolute;
       top: 110vh;
@@ -69,7 +113,7 @@ body{
       padding: 30vh 10%;
       background-image: (linear-gradient(rgba(171, 183, 192, .1) 0%, rgba(171, 183, 192, .2) 5%,
               rgba(171, 183, 192, .3) 10%, rgba(171, 183, 192, .4) 15%,
-              rgba(171, 183, 192, .5) 20%, rgba(171, 183, 192, .7 gulp) 25%,
+              rgba(171, 183, 192, .5) 20%, rgba(171, 183, 192, .7) 25%,
               rgba(171, 183, 192, .9) 30%, rgba(171, 183, 192, 1) 45%,
               rgba(171, 183, 192, 1) 65%, rgba(171, 183, 192, .9) 70%,
               rgba(171, 183, 192, .7) 75%, rgba(171, 183, 192, .5) 80%,
@@ -82,7 +126,18 @@ body{
         -o-transform: rotate(5deg);
         -ms-transform: rotate(5deg);
         transform: rotate(5deg);
+        .btn-outline-dark{
+          color: rgba(55, 6, 23,1);
+          &:hover{
+            color: white;
+            background-color: rgba(55, 6, 23,.9);
+          }
+        }
       }
     }
   }
+  .jumbotron{
+    margin: 0;
+  }
 }
+

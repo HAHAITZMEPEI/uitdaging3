@@ -35,6 +35,9 @@ $theme-colors: (
   a{
     color: white;
   }
+  .active{
+    font-weight: bold;
+  }
   .dropdown-menu {
     background-color: rgba(55, 6, 23,1);
   }
