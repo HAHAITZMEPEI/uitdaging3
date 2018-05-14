@@ -44,14 +44,9 @@ $theme-colors: (
 }
 
 .footer {
-  height: 100vh;
-}
-
-footer {
-  background-color: #6f42c1;
-  img {
-    float: left;
-    background-color: #6f42c1;
+  padding-top: 100vh;
+  .logo{
+    width: 100px;float: right;
   }
 }
 
