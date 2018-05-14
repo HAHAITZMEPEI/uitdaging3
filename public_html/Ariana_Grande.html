@@ -2,6 +2,7 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
+    <meta name="author" content="Pei Yang">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
     <link rel="stylesheet" href="css/style.css">
@@ -17,7 +18,7 @@
     <meta name="msapplication-TileColor" content="#2d89ef">
     <meta name="theme-color" content="#ffffff">
 
-    <title>How to music</title>
+    <title>Ariana Grande</title>
 </head>
 <body>
 
@@ -86,6 +87,7 @@
                     </div>
                 </li>
             </ul>
+            <input type="button" id="button" value="Verwijder achtergrond">
         </div>
     </nav>
 
@@ -94,10 +96,14 @@
         <div class="opm-container" id="overDeArtist">
             <div class="row">
                 <article class="container content">
-                    <h3>Wie is hij?</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...quis nostrud exercitation ullamco laboris...quis nostrud exercitation ullamco laboris...quis nostrud exercitation ullamco laboris...</p>
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                    <h3>Wie is ze?</h3>
+                    <p>Ariana Grande is een popzangeres / actrice uit de Verinigde Staten.</p>
+                    <p>
+                        Ze begon al op een jonge leeftijd te acteren, haar eerste rol was in een broadway voorstelling, daarna kwam er een paar kleine rollen op televisie.
+                        haar grote rol was in Victorious waar ze een goede vriedin speelde van de hoofdpersonage. Na victorous had ze haar eigen show gekregen genaamd Sam & Cat.
+                        Na dat Sam & Cat geannulleerd was is ze gestart met haar eigen zangcarrière haar eerste album dat ze naar buiten bracht heette Yours Truly.
+                        Dat een directe hit werd in Amerika, ze werd daarna ook heel populair op sociale media.
+                    </p>
                 </article>
             </div>
         </div>
@@ -194,6 +200,11 @@
                 $(".moreEvenementenInfo").show();
                 $(".mainEvenementenInfo").show();
             });
+        });
+
+        $("#button").click(function () {
+            $("#ArianaGrande-container,.section-one,.section-two,.section-three").css({'background-image':'none'}).css({'background-color' : 'pink'});
+            // $("#ArianaGrande-container,.section-one,.section-two,.section-three").toggleClass('aan');
         });
     </script>
 
