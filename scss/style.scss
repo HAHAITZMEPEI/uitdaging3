@@ -10,11 +10,15 @@ $theme-colors: (
 // Custom code/partials
 @import "slider";
 @import "container";
-
+@import "header";
+@import "navbar";
+@import "Footer";
+@import "btn";
 // Google Fonts
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 // Variables
+<<<<<<< HEAD
 
 
 .header{
@@ -76,3 +80,4 @@ $theme-colors: (
 //#ArianaGrande-container.aan{
 //  background: pink;
 //}
+
