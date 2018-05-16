@@ -91,6 +91,10 @@
     </div>
 </nav>
 
+<div id="button">
+    <button class="button">Naar boven</button>
+</div>
+
 <!--Section one-->
 <section id="michaelJakson-container">
     <div class="opm-container" id="overDeArtist">
@@ -198,6 +202,10 @@
             $(".moreEvenementenInfo").show();
             $(".mainEvenementenInfo").show();
         });
+    });
+
+    $("#button").click(function() {
+        $('html, body').animate({ scrollTop: 0 });
     });
 </script>
 

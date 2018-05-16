@@ -77,7 +77,20 @@ $theme-colors: (
   }
 }
 
+.button {
+  background-color : rgba(55, 6, 23,0.6);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  border-color: rgba(55, 6, 23,0.6);
+}
+
+#button {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
 //#ArianaGrande-container.aan{
 //  background: pink;
 //}
-
