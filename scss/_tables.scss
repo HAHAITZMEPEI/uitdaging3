@@ -1,0 +1,26 @@
+table {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+  th {
+    padding: 12px;
+    text-align: center;
+    background-color: rgba(55, 6, 23, 1);
+    color: white;
+  }
+  tr {
+    border: 1px solid #ddd;
+    padding: 12px;
+    color: white;
+    text-align: center;
+    background-color:rgba(55, 6, 23, .7) ;
+    &:nth-child(even){
+      background-color: #f2f2f2;
+      color: rgba(55, 6, 23, .9);
+    }
+    td{
+      padding: 6px;
+    }
+  }
+}

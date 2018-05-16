@@ -97,7 +97,7 @@
                     <h3>Wie is hij?</h3>
                     <p>Nassif is een Syrische zanger die geboren te Syrië op 1988.</p>
                     <p>Zijn carieer was begonnen toen hij "Star Acadmy programma" gewonnen heeft in 2010.</p>
-
+                    <p>Hij heeft veel fans gewonnen door zijn geweldige charisma en ongelooflijk stemgeluid. Daarom behaalde hij het hoogste percentage stemmen in de geschiedenis van Star Academy competitie.</p>
                 </article>
             </div>
         </div>
@@ -110,16 +110,24 @@
                 <article class="container content">
                     <h3>Awards</h3>
                     <div class="mainAwardsInfo">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                        <p>Nassif heeft nog niet teveel awards gewonnen omdat hij een jonge zanger is, maar zijn eerste album "Ya-Samt" die gepubliceerd in 2013 was de meeste beluisterde album via de top arabische muziek applicatie "Anghami".</p>
                     </div>
                     <div class="extraAwardsInfo">
-                        <h2 class="text-center">Heading</h2>
-                        <p class="text-center">Paragraph.</p>
-                        <p class="text-center">Another paragraph.</p>
-                        <p class="text-right"><a class="btn btn-outline-dark btn-lg lessAwardsInfo">Less</a></p>
+                        <table>
+                            <tr>
+                                <th>Award</th>
+                                <th>Yaar</th>
+                                <th>Toegekend door</th>
+                            </tr>
+                            <tr>
+                                <td>Star Academy</td>
+                                <td>2010</td>
+                                <td></td>
+                            </tr>
+                        </table>
+                        <p class="text-right"><a class="btn btn-outline-dark btn-lg lessAwardsInfo">Terug</a></p>
                     </div>
-                    <p class="text-right"><a class="btn btn-outline-dark btn-lg moreAwardsInfo">More</a></p>
+                    <p class="text-right"><a class="btn btn-outline-dark btn-lg moreAwardsInfo">Toon Awards</a></p>
                 </article>
             </div>
         </div>
@@ -176,12 +184,12 @@
         $(document).ready(function(){
             $(".extraAwardsInfo").hide();
             $("a.moreAwardsInfo").click(function(){
-                $(".extraAwardsInfo").show();
+                $(".extraAwardsInfo").slideDown();
                 $(".moreAwardsInfo").hide();
                 $(".mainAwardsInfo").hide();
             });
             $("a.lessAwardsInfo").click(function(){
-                $(".extraAwardsInfo").hide();
+                $(".extraAwardsInfo").slideUp();
                 $(".moreAwardsInfo").show();
                 $(".mainAwardsInfo").show();
             });
