@@ -126,28 +126,6 @@ body{
         -o-transform: rotate(5deg);
         -ms-transform: rotate(5deg);
         transform: rotate(5deg);
-        .btn-outline-dark{
-          color: rgba(55, 6, 23,1);
-          &:hover{
-            background-color:rgba(55, 6, 23,.9) ;
-            color: white;
-            -webkit-animation-name: btn; /* Safari 4.0 - 8.0 */
-            -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
-            animation-name: btn;
-            animation-duration: 1s;
-            /* Safari 4.0 - 8.0 */
-            @-webkit-keyframes btn {
-              from {background-color: rgba(55, 6, 23,.0);}
-              to {background-color: rgba(55, 6, 23,.9);}
-            }
-
-            /* Standard syntax */
-            @keyframes btn {
-              from {background-color: rgba(55, 6, 23,.0);}
-              to {background-color: rgba(55, 6, 23,.9);}
-            }
-          }
-        }
       }
     }
   }

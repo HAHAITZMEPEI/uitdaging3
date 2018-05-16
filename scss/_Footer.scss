@@ -1,0 +1,12 @@
+.footer {
+  padding-top: 100vh;
+}
+.logo{
+  width: 100px;
+  &:hover{
+    -ms-transform: rotatey(360deg); /* IE 9 */
+    -webkit-transform: rotatey(360deg); /* Safari */
+    transform: rotatey(360deg); /* Standard syntax */
+    transition: 5s;
+  }
+}

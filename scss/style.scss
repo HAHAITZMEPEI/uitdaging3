@@ -10,69 +10,27 @@ $theme-colors: (
 // Custom code/partials
 @import "slider";
 @import "container";
-
+@import "header";
+@import "navbar";
+@import "Footer";
+@import "btn";
 // Google Fonts
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 // Variables
-
-
-.header{
-  max-width: 100%;
-  height: 100vh;
-  background-image: url(../images/Header.jpg);
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  padding-top: 20%;
-  color: white;
-}
-
-.navbar{
-  background-color: rgba(55, 6, 23,0.6);
-  a{
-    color: white;
-  }
-  .active{
-    font-weight: bold;
-  }
-  .dropdown-menu {
-    background-color: rgba(55, 6, 23,1);
-  }
-}
-
-.footer {
-  padding-top: 100vh;
-}
-.logo{
-  width: 100px;
-  &:hover{
-    -ms-transform: rotatey(360deg); /* IE 9 */
-    -webkit-transform: rotatey(360deg); /* Safari */
-    transform: rotatey(360deg); /* Standard syntax */
-    transition: 5s;
-  }
-}
-
 p {
   animation-duration: 2s;
   animation-name: tekst;
   animation-iteration-count: inherit;
-}
-@keyframes tekst {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
+  @keyframes tekst {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
 
-  to {
-    margin-left: 0%;
-    width: 100%;
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
   }
 }
-
-//#ArianaGrande-container.aan{
-//  background: pink;
-//}
