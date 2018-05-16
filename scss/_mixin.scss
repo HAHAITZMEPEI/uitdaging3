@@ -4,6 +4,7 @@ $h2-color:rgba(55, 6, 23,.9);
   font-family: $font-family;
   color: $font-color;
   font-style: italic;
+  text-transform: uppercase;
   font-weight: $font-weight;
 }
 @mixin background-cover (){

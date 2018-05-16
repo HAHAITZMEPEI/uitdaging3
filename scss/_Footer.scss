@@ -1,12 +1,25 @@
 .footer {
   padding-top: 100vh;
 }
-.logo{
-  width: 100px;
-  &:hover{
-    -ms-transform: rotatey(360deg); /* IE 9 */
-    -webkit-transform: rotatey(360deg); /* Safari */
-    transform: rotatey(360deg); /* Standard syntax */
-    transition: 5s;
+footer {
+  padding: 20px 90px 10px 90px;
+  background-color: #e9ecef;
+
+  .logo {
+    height:75px;
+    &:hover {
+      -ms-transform: rotatey(360deg); /* IE 9 */
+      -webkit-transform: rotatey(360deg); /* Safari */
+      transform: rotatey(360deg); /* Standard syntax */
+      transition: 5s;
+    }
   }
+}
+
+.author{
+  padding: 10px 90px;
+  background-color: #d9dbdd;
+  font-size: 16px;
+  color: rgba(55, 6, 23, .9);
+  text-align: right;
 }
