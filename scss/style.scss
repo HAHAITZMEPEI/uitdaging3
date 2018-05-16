@@ -17,9 +17,6 @@ $theme-colors: (
 // Google Fonts
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
-// Variables
-<<<<<<< HEAD
-
 
 .header{
   max-width: 100%;
@@ -91,6 +88,7 @@ $theme-colors: (
   right: 10px;
 }
 
-//#ArianaGrande-container.aan{
-//  background: pink;
-//}
+#ArianaGrande-container.aan,.section-one.aan,.section-two.aan,.section-three.aan{
+  background: pink;
+}
+
