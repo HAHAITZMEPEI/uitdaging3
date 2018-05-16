@@ -14,10 +14,15 @@ $theme-colors: (
 @import "navbar";
 @import "Footer";
 @import "btn";
+
+// Mixins
+@import "mixin";
+
 // Google Fonts
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 // Variables
+
 p {
   animation-duration: 2s;
   animation-name: tekst;

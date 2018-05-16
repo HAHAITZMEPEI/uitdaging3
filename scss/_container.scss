@@ -1,13 +1,12 @@
+@import "mixin";
+
 body{
   overflow-x: hidden;
 
   #ArianaGrande-container {
     height: 150vh;
     background-image: url("../images/AG-Header.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    @include background-cover;
     @media only screen and (max-width: 500px) {
       background-position: right;
     }
@@ -15,10 +14,7 @@ body{
   #Eminem-container {
     height: 150vh;
     background-image: url("../images/Eminem.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    @include background-cover;
     @media only screen and (max-width: 500px) {
       background-position: right;
     }
@@ -26,10 +22,7 @@ body{
   #michaelJakson-container {
     height: 150vh;
     background-image: url("../images/Michael_jackson.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    @include background-cover;
     @media only screen and (max-width: 500px) {
       background-position: right;
     }
@@ -37,10 +30,7 @@ body{
   #NassifZeytoun-container {
     height: 150vh;
     background-image: url("../images/NassifZeytoun.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    @include background-cover;
     @media only screen and (max-width: 500px) {
       background-position: right;
     }
@@ -48,10 +38,7 @@ body{
   #TamerHosny-container {
     height: 150vh;
     background-image: url("../images/TH-Header.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    @include background-cover;
     @media only screen and (max-width: 500px) {
       background-position: right;
     }
@@ -59,10 +46,7 @@ body{
   #TaylorSwift-container {
     height: 150vh;
     background-image: url("../images/TS-Header.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    @include background-cover;
     @media only screen and (max-width: 500px) {
       background-position: right;
     }
@@ -70,23 +54,17 @@ body{
     .section-one {
       height: 150vh;
       background-image: url("https://images.pexels.com/photos/9137/night-vintage-music-bokeh.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-attachment: fixed;
+      @include background-cover;
     }
     .section-two {
       height: 150vh;
       background-image: url("https://images.pexels.com/photos/196652/pexels-photo-196652.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-attachment: fixed;
+      @include background-cover;
     }
     .section-three {
       height: 150vh;
       background-image: url("https://images.pexels.com/photos/258804/pexels-photo-258804.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-attachment: fixed;
+      @include background-cover;
     }
   section {
     #overDeArtist {
@@ -111,14 +89,7 @@ body{
       margin-left: -5%;
       min-width: 110%;
       padding: 30vh 10%;
-      background-image: (linear-gradient(rgba(171, 183, 192, .1) 0%, rgba(171, 183, 192, .2) 5%,
-              rgba(171, 183, 192, .3) 10%, rgba(171, 183, 192, .4) 15%,
-              rgba(171, 183, 192, .5) 20%, rgba(171, 183, 192, .7) 25%,
-              rgba(171, 183, 192, .9) 30%, rgba(171, 183, 192, 1) 45%,
-              rgba(171, 183, 192, 1) 65%, rgba(171, 183, 192, .9) 70%,
-              rgba(171, 183, 192, .7) 75%, rgba(171, 183, 192, .5) 80%,
-              rgba(171, 183, 192, .4) 85%, rgba(171, 183, 192, .3) 90%,
-              rgba(171, 183, 192, .2) 95%, rgba(171, 183, 192, .1) 100%));
+      @include linear-gradient-background;
 
       article {
         -webkit-transform: rotate(5deg);
@@ -126,6 +97,9 @@ body{
         -o-transform: rotate(5deg);
         -ms-transform: rotate(5deg);
         transform: rotate(5deg);
+        h3{
+          @include font-style($google-font,$h2-color,bold);
+        }
       }
     }
   }
