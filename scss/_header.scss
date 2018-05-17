@@ -9,6 +9,11 @@
   background-size: cover;
   padding-top: 20%;
   color: white;
+  @media only screen and (max-width: 600px) {
+    background-image: none;
+    background-color: darkgrey;
+    color: black;
+  }
 
   p {
     animation-duration: 2s;
