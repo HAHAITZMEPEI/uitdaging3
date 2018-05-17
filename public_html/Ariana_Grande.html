@@ -21,9 +21,7 @@
     <title>Ariana Grande</title>
 </head>
 <body>
-
     <!--Nav bar-->
-    <nav class="navbar navbar-expand-lg fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 600 600">
             <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
@@ -88,7 +86,7 @@
                     </div>
                 </li>
             </ul>
-            <a class="btn btn-outline-dark btn-lg" id="Delete">Verwijder achtergrond</a>
+            <a class="btn btn-outline-light btn-lg" id="Delete">Verwijder achtergrond</a>
         </div>
     </nav>
 
@@ -169,6 +167,7 @@
         <a href="https://www.instagram.com/yang_pjd/"><i class="fab fa-instagram fa-3x"></i></a>
     </div>
 
+
     <!-- Top button -->
     
     
@@ -223,6 +222,10 @@
         $("#button").click(function() {
             $('html, body').animate({ scrollTop: 0 });
         });
+
+        $(document).ready(function () {
+            $('section').find('h2').css({'text-decoration': 'underline', 'color' : 'red', 'text-weight': 'bold'})
+        })
     </script>
 </body>
 </html>

@@ -45,21 +45,21 @@ body{
       background-position: center;
     }
   }
-    .section-one {
-      height: 150vh;
-      background-image: url("https://images.pexels.com/photos/9137/night-vintage-music-bokeh.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-      @include background-cover;
-    }
-    .section-two {
-      height: 150vh;
-      background-image: url("https://images.pexels.com/photos/196652/pexels-photo-196652.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-      @include background-cover;
-    }
-    .section-three {
-      height: 150vh;
-      background-image: url("https://images.pexels.com/photos/258804/pexels-photo-258804.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-      @include background-cover;
-    }
+  .section-one {
+    height: 150vh;
+    background-image: url("https://images.pexels.com/photos/9137/night-vintage-music-bokeh.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    @include background-cover;
+  }
+  .section-two {
+    height: 150vh;
+    background-image: url("https://images.pexels.com/photos/196652/pexels-photo-196652.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    @include background-cover;
+  }
+  .section-three {
+    height: 150vh;
+    background-image: url("https://images.pexels.com/photos/258804/pexels-photo-258804.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    @include background-cover;
+  }
   section {
     h3 {
       display:inline-block;
@@ -81,7 +81,26 @@ body{
     #ArianaGrande-container.aan,.section-one.aan,.section-two.aan,.section-three.aan{
       background: pink;
     }
+<<<<<<< refs/remotes/origin/master
+  section {
+    h3 {
+      display:inline-block;
+      transition: 1s;
+      animation-duration: 4s;
+      animation-name: fade;
+      animation-iteration-count: inherit;
+      @keyframes fade {
+        from {
+          opacity: 0;
+        }
+      }
 
+      &:hover {
+        background-color: inherit;
+        transform: rotate(-2deg) scale(1.2);
+      }
+    }
+    
     #overDeArtist {
       position: absolute;
       top: 110vh;
@@ -126,6 +145,5 @@ body{
 .section-one.aan,
 .section-two.aan,
 .section-three.aan{
-  background: pink;
+  background: #744492;
 }
-
