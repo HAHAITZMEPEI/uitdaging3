@@ -170,7 +170,6 @@
     <button class="button">↑</button>
 </div>
 
-
 <!--Other scripts-->
 <!--Active nav -->
 
@@ -212,6 +211,10 @@
     $("#button").click(function() {
         $('html, body').animate({ scrollTop: 0 });
     });
+
+    $(document).ready(function(){
+        $("footer").children().css({'text-decoration': 'underline', 'color' : '#66001a'})
+    })
 </script>
 
 </body>
