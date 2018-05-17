@@ -9,4 +9,16 @@
   background-size: cover;
   padding-top: 20%;
   color: white;
+
+  p {
+    animation-duration: 2s;
+    animation-name: tekst;
+    animation-iteration-count: inherit;
+    @keyframes tekst {
+      from {
+        margin-left: 100%;
+        width: 300%;
+      }
+    }
+  }
 }

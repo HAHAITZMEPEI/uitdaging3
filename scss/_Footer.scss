@@ -31,9 +31,9 @@ footer {
       height:30px !important;
     }
     &:hover {
-      -ms-transform: rotatey(360deg); /* IE 9 */
-      -webkit-transform: rotatey(360deg); /* Safari */
-      transform: rotatey(360deg); /* Standard syntax */
+      -ms-transform: rotatey(360deg); /* IE 9 /
+      -webkit-transform: rotatey(360deg); / Safari /
+      transform: rotatey(360deg); / Standard syntax */
       transition: 5s;
     }
   }
@@ -49,4 +49,14 @@ footer {
     text-align: center;
     padding: 6px 0;
   }
+  a {
+    i {
+      color: darkred;
+      &:hover {
+        -ms-transform: skew(20deg,10deg); /* IE 9 /
+        -webkit-transform: skew(20deg,10deg); / Safari /
+        transform: skew(20deg,10deg); / Standard syntax */
+        transition: 2s;
+      }
+    }
 }

@@ -25,17 +25,3 @@ $theme-colors: (
 
 // Variables
 
-p {
-  animation-duration: 2s;
-  animation-name: tekst;
-  animation-iteration-count: inherit;
-  @keyframes tekst {
-    from {
-      margin-left: 100%;
-      width: 300%;
-    }
-  }
-}
-#ArianaGrande-container.aan,.section-one.aan,.section-two.aan,.section-three.aan{
-  background: pink;
-}
