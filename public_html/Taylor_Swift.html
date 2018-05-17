@@ -85,6 +85,7 @@
                         <a class="dropdown-item" href="Nassif_Zeytoun.html">Nassif Zeytoun</a>
                 </li>
             </ul>
+            <a class="btn btn-outline-light btn-lg" id="Delete">Verwijder achtergrond</a>
         </div>
     </nav>
 
@@ -148,12 +149,18 @@
 
     <!--Footer-->
     <div class="section-three"></div>
-    <footer class="jumbotron text-center">
+    <footer class="text-center">
         <p>
             Gemaakt door: <a href="http://omaralrass.sinners.be/onepager/index.html"><img src="images/opm.PNG" class="logo" alt=""></a>OPM Webdesigners
             <a href="https://www.thomasmore.be/" class="clearfix"><img src="images/TM.png" class="logo float-left" alt="Thomas More Logo"></a>
         </p>
     </footer>
+    <div class="author">
+        Dit pagina is opgebouwd door © <a href="http://tonton.sinners.be/">Pei Yang</a>
+        <a href="https://www.facebook.com/Tonton.Yang"><i class="fab fa-facebook-square fa-3x" ></i></a>
+        <a href="https://twitter.com/crosskillerHD"><i class="fab fa-twitter-square fa-3x"></i></a>
+        <a href="https://www.instagram.com/yang_pjd/"><i class="fab fa-instagram fa-3x"></i></a>
+    </div>
 
     <!--top button-->
     <div id="button">
@@ -204,6 +211,18 @@
         $("#button").click(function() {
             $('html, body').animate({ scrollTop: 0 });
         });
+
+        $("#Delete").click(function () {
+            $("#TaylorSwift-container,.section-one,.section-two,.section-three").toggleClass('aan');
+        });
+
+        $("#button").click(function() {
+            $('html, body').animate({ scrollTop: 0 });
+        });
+
+        $(document).ready(function () {
+            $('section').find('h2').css({'text-decoration': 'underline', 'color' : 'red', 'text-weight': 'bold'})
+        })
     </script>
 
 </body>
