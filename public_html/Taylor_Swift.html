@@ -202,7 +202,7 @@
 
     <!--top button-->
     <div id="button">
-        <button class="button">↑</button>
+        <button class="button"><p>↑</p></button>
     </div>
 
     <!--bootstrap scripts-->
@@ -259,9 +259,13 @@
             $('table tr').find('th').css({'color' : '#abb7c0', 'text-weight': 'bold'})
         })
 
-        $(document).ready(function(){
-            $("footer").children().css({'text-decoration': 'underline', 'color' : '#66001a'})
-        })
+        $(window).scroll(function () {
+            if (jQuery(this).scrollTop() == 0) {
+                $("#button").children().text("Top bereikt");
+            } else {
+                $("#button").children().text("↑");
+            }
+        });
     </script>
 
 </body>
