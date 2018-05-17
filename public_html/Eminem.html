@@ -86,6 +86,7 @@
                     </div>
                 </li>
             </ul>
+            <a class="btn btn-outline-light btn-lg" id="Delete">Verwijder achtergrond</a>
         </div>
     </nav>
 
@@ -203,9 +204,22 @@
                 $(".mainEvenementenInfo").show();
             });
         });
+
+        $("#Delete").click(function () {
+            $("#Eminem-container,.section-one,.section-two,.section-three").toggleClass('aan');
+        });
+
         $("#button").click(function() {
             $('html, body').animate({ scrollTop: 0 });
         });
+
+        $(document).ready(function () {
+            $('section').find('h2').css({'text-decoration': 'underline', 'color' : 'red', 'text-weight': 'bold'})
+        })
+
+        $(document).ready(function(){
+            $("footer").children().css({'text-decoration': 'underline', 'color' : '#66001a'})
+        })
     </script>
 
 </body>
