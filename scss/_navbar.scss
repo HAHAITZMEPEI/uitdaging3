@@ -1,5 +1,11 @@
 .navbar{
   background-color: rgba(55, 6, 23,0.6);
+  @media (max-width: 990px) {
+    text-align: center;
+    .dropdown-item {
+      text-align: center;
+    }
+    }
   a{
     color: white;
 
@@ -34,13 +40,25 @@
     margin-top: 20px;
     color: white;
     }
+  @media (max-width: 990px) {
+    .nav-link {
+      transition-duration: 0s;
+    }
+    &:hover {
+      transform: none;
+      margin: 0px;
+    }
+  }
 }
 
 #Delete {
   font-weight: bolder;
   color: white;
-  &:hover{
+  &:hover {
     color: black;
+  }
+  @media (max-width: 990px) {
+    display: none;
   }
 }
 
