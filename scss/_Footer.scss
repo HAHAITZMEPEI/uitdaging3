@@ -31,9 +31,9 @@ footer {
       height:30px !important;
     }
     &:hover {
-      -ms-transform: rotatey(360deg); /* IE 9 /
-      -webkit-transform: rotatey(360deg); / Safari /
-      transform: rotatey(360deg); / Standard syntax */
+      -ms-transform: rotatey(360deg); /* IE 9 */
+      -webkit-transform: rotatey(360deg); /* Safari */
+      transform: rotatey(360deg); /* Standard syntax */
       transition: 5s;
     }
   }
