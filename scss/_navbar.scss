@@ -1,5 +1,7 @@
+@import "mixin";
+
 .navbar{
-  background-color: rgba(55, 6, 23,0.6);
+  background-color: $navbar-color;
   @media (max-width: 990px) {
     text-align: center;
     .dropdown-item {

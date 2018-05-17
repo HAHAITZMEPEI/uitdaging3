@@ -1,5 +1,9 @@
 $google-font: Montserrat, sans-serif;
 $h2-color:rgba(55, 6, 23,.9);
+$navbar-color: rgba(55, 6, 23,0.6);
+$grijs: #abb7c0;
+$paars: #744492;
+
 @mixin font-style($font-family,$font-color,$font-weight){
   font-family: $font-family;
   color: $font-color;
