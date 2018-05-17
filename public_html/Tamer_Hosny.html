@@ -254,6 +254,11 @@
         Dit pagina is opgebouwd door © <a href="http://omaralrass.sinners.be/">Omar Alrass.</a>
     </div>
 
+    <!--top button-->
+    <div id="button">
+        <button class="button">↑</button>
+    </div>
+
     <!--bootstrap scripts-->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
@@ -294,6 +299,9 @@
                 $(".moreEvenementenInfo").show();
                 $(".mainEvenementenInfo").show();
             });
+        });
+        $("#button").click(function() {
+            $('html, body').animate({ scrollTop: 0 });
         });
     </script>
 
