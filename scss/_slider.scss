@@ -68,17 +68,18 @@ body {
 }
 
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1200px) {
 
   .flex-container { flex-direction: column; }
   .flex-slide {
     overflow: auto;
     overflow-x: hidden;
-    .flex-title { transform: rotate(0deg) !important; }
+    .flex-title { transform: rotate(0deg) !important;
+      font-size: 3vw; }
     .flex-about {
       padding: 0%;
       border: 0px solid #f1f1f1;
-      p { font-size: 2em; }
+      p { font-size: 1.5em; }
       .btn-lg{
         padding: 6px;
         font-size: .8em;
