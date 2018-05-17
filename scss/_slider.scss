@@ -95,12 +95,14 @@ body {
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
+  overflow-y: hidden;
 }
 .tamerHosny {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/TamerHosny.jpg);
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
+  overflow-y: hidden;
   @media only screen and (max-width: 600px) {
     background-position: 40%;
   }
@@ -110,18 +112,21 @@ body {
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
+  overflow-y: hidden;
 }
 .arianaGrande {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/AG-Header.jpg);
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
+  overflow-y: hidden;
 }
 .nassifZeytoun {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/NassifZeytoun.jpg);
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
+  overflow-y: hidden;
   @media only screen and (max-width: 600px) {
     background-position: 65%;
   }
@@ -131,6 +136,7 @@ body {
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
+  overflow-y: hidden;
   @media only screen and (max-width: 600px) {
     background-position: right;
   }
