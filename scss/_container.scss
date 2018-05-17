@@ -61,6 +61,27 @@ body{
       @include background-cover;
     }
   section {
+    h3 {
+      display:inline-block;
+      transition: 1s;
+      animation-duration: 4s;
+      animation-name: fade;
+      animation-iteration-count: inherit;
+      @keyframes fade {
+        from {
+          opacity: 0;
+        }
+      }
+
+      &:hover {
+        background-color: inherit;
+        transform: rotate(-2deg) scale(1.2);
+      }
+    }
+    #ArianaGrande-container.aan,.section-one.aan,.section-two.aan,.section-three.aan{
+      background: pink;
+    }
+
     #overDeArtist {
       position: absolute;
       top: 110vh;
