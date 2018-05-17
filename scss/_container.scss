@@ -7,15 +7,12 @@ body{
     height: 150vh;
     background-image: url("../images/AG-Header.jpg");
     @include background-cover;
-    @media only screen and (max-width: 500px) {
-      background-position: right;
-    }
   }
   #Eminem-container {
     height: 150vh;
     background-image: url("../images/Eminem.jpg");
     @include background-cover;
-    @media only screen and (max-width: 500px) {
+    @media only screen and (max-width: 1200px) {
       background-position: right;
     }
   }
@@ -23,9 +20,6 @@ body{
     height: 150vh;
     background-image: url("../images/Michael_jackson.jpg");
     @include background-cover;
-    @media only screen and (max-width: 500px) {
-      background-position: right;
-    }
   }
   #NassifZeytoun-container {
     height: 150vh;
@@ -39,7 +33,7 @@ body{
     height: 150vh;
     background-image: url("../images/TH-Header.jpg");
     @include background-cover;
-    @media only screen and (max-width: 500px) {
+    @media only screen and (max-width: 1200px) {
       background-position: right;
     }
   }
@@ -47,8 +41,8 @@ body{
     height: 150vh;
     background-image: url("../images/TS-Header.jpg");
     @include background-cover;
-    @media only screen and (max-width: 500px) {
-      background-position: right;
+    @media only screen and (max-width: 1200px) {
+      background-position: center;
     }
   }
     .section-one {

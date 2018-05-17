@@ -8,6 +8,13 @@ table {
     text-align: center;
     background-color: rgba(55, 6, 23, 1);
     color: white;
+    font-size: 24px;
+    @media only screen and (max-width: 800px) {
+      font-size: 17px !important;
+    }
+    @media only screen and (max-width: 500px) {
+      font-size: 14px !important;
+    }
   }
   tr {
     border: 1px solid #ddd;
@@ -21,6 +28,12 @@ table {
     }
     td{
       padding: 6px;
+      @media only screen and (max-width: 800px) {
+        font-size: 14px !important;
+      }
+      @media only screen and (max-width: 500px) {
+        font-size: 10px !important;
+      }
     }
   }
 }
