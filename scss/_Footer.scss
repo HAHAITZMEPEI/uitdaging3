@@ -39,7 +39,7 @@ footer {
   }
 }
 
-.author{
+.author {
   padding: 10px 90px;
   background-color: #d9dbdd;
   font-size: 16px;
@@ -53,10 +53,12 @@ footer {
     i {
       color: darkred;
       &:hover {
-        -ms-transform: skew(20deg,10deg); /* IE 9 /
-        -webkit-transform: skew(20deg,10deg); / Safari /
-        transform: skew(20deg,10deg); / Standard syntax */
+        -ms-transform: skew(20deg, 10deg);
+        /* IE 9 /
+               -webkit-transform: skew(20deg,10deg); / Safari /
+               transform: skew(20deg,10deg); / Standard syntax */
         transition: 2s;
       }
     }
+  }
 }
