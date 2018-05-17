@@ -119,12 +119,31 @@
                         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
                     </div>
                     <div class="extraAwardsInfo">
-                        <h2 class="text-center">Heading</h2>
-                        <p class="text-center">Paragraph.</p>
-                        <p class="text-center">Another paragraph.</p>
-                        <p class="text-right"><a class="btn btn-outline-dark btn-lg lessAwardsInfo">Less</a></p>
+                        <table>
+                            <tr>
+                                <th>Award</th>
+                                <th>Jaar</th>
+                                <th>Toegekend door</th>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                        <p class="text-right"><a class="btn btn-outline-dark btn-lg lessAwardsInfo">Terug</a></p>
                     </div>
-                    <p class="text-right"><a class="btn btn-outline-dark btn-lg moreAwardsInfo">More</a></p>
+                    <p class="text-right"><a class="btn btn-outline-dark btn-lg moreAwardsInfo">Toon Awards</a></p>
                 </article>
             </div>
         </div>
@@ -141,12 +160,53 @@
                         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
                     </div>
                     <div class="extraEvenementenInfo">
-                        <h2 class="text-center">Heading</h2>
-                        <p class="text-center">Paragraph.</p>
-                        <p class="text-center">Another paragraph.</p>
-                        <p class="text-right"><a class="btn btn-outline-dark btn-lg lessEvenementenInfo">Less</a></p>
+                        <table>
+                            <tr>
+                                <th>Event</th>
+                                <th>Plaats</th>
+                                <th>Datum</th>
+                                <th>Dag</th>
+                                <th>Uur</th>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                        <p class="text-right"><a class="btn btn-outline-dark btn-lg lessEvenementenInfo">Terug</a></p>
                     </div>
-                    <p class="text-right"><a class="btn btn-outline-dark btn-lg moreEvenementenInfo">More</a></p>
+                    <p class="text-right"><a class="btn btn-outline-dark btn-lg moreEvenementenInfo">Toon Evenementen</a></p>
                 </article>
             </div>
         </div>
@@ -192,30 +252,30 @@
         $(document).ready(function(){
             $(".extraAwardsInfo").hide();
             $("a.moreAwardsInfo").click(function(){
-                $(".extraAwardsInfo").show();
+                $(".extraAwardsInfo").slideDown();
                 $(".moreAwardsInfo").hide();
                 $(".mainAwardsInfo").hide();
             });
             $("a.lessAwardsInfo").click(function(){
-                $(".extraAwardsInfo").hide();
+                $(".extraAwardsInfo").slideUp();
                 $(".moreAwardsInfo").show();
                 $(".mainAwardsInfo").show();
             });
             $(".extraEvenementenInfo").hide();
             $("a.moreEvenementenInfo").click(function(){
-                $(".extraEvenementenInfo").show();
+                $(".extraEvenementenInfo").slideDown();
                 $(".moreEvenementenInfo").hide();
                 $(".mainEvenementenInfo").hide();
             });
             $("a.lessEvenementenInfo").click(function(){
-                $(".extraEvenementenInfo").hide();
+                $(".extraEvenementenInfo").slideUp();
                 $(".moreEvenementenInfo").show();
                 $(".mainEvenementenInfo").show();
             });
         });
 
         $("#Delete").click(function () {
-            $("#ArianaGrande-container,.section-one,.section-two,.section-three").toggleClass('aan');
+            $("#TamerHosny-container,.section-one,.section-two,.section-three").toggleClass('aan');
         });
 
         $("#button").click(function() {
